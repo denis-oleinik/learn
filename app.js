@@ -7,11 +7,11 @@ const personalMovieDB = {
     genres: [],
     privat: false
 };
-
-const lastFilm = prompt('Один из последних просмотренных фильмов?', '');
-const rating = prompt('На сколько оцените его?', '');
-
-personalMovieDB.movies[lastFilm] = rating;
+for(let i = 0; i < 2; i++){
+    const lastFilm = prompt('Один из последних просмотренных фильмов?', '');
+    const rating = prompt('На сколько оцените его?', '');
+    personalMovieDB.movies[lastFilm] = rating;
+}
 
 console.log(personalMovieDB);
 
