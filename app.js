@@ -24,8 +24,10 @@ if(personalMovieDB.count < 10) {
     viewer = 'Просмотрено довольно мало фильмов';
 }else if(personalMovieDB.count < 30) {
     viewer = 'Вы классический зритель';
-}else{
+}else if(personalMovieDB.count > 30) {
     viewer = 'Вы киноман';
+}else {
+    viewer = 'Произошла ошибка';
 }
 
 alert(viewer);
